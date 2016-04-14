@@ -27,7 +27,9 @@ public class MainActivity extends ActionBarActivity {
     /**
      * This method is called when the order button is clicked.
      */
-    public void increment(View view) {
+    public void increment(View view)
+    {
+
         display(++quantity);
     }
 
@@ -48,7 +50,7 @@ public class MainActivity extends ActionBarActivity {
      * This method displays the given price on the screen.
      */
     private void displayPrice(int number) {
-        TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
+        TextView priceTextView = (TextView) findViewById(R.id.total_text_view);
         priceTextView.setText(NumberFormat.getCurrencyInstance().format(number));
     }
 
